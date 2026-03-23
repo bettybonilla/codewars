@@ -14,7 +14,7 @@ if bmi > 30 return "Obese"
 
 
 def bmi(weight: int | float, height: int | float) -> str:
-    bmi = (weight / height ** 2)
+    bmi = weight / (height**2)
     if bmi <= 18.5:
         return "Underweight"
     if bmi <= 25.0:
@@ -23,4 +23,5 @@ def bmi(weight: int | float, height: int | float) -> str:
         return "Overweight"
     if bmi > 30.0:
         return "Obese"
+
     return "Error: Invalid input"

@@ -30,6 +30,8 @@ Examples
 def is_square(n: int) -> bool:
     if n < 0:
         return False
-    if int(n ** 0.5) ** 2 == n:
+
+    if int(n**0.5) ** 2 == n:
         return True
+
     return False

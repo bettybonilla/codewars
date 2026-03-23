@@ -21,6 +21,8 @@ point it has chimed 16 times, so the 19th chime occurs when it chimes 6 times at
 Source: International Collegiate Programming Contest, North Central North American Regional, 2023.
 """
 
+import unittest
+
 
 def cuckoo_clock(initial_time: str, n: int) -> str:
     chime_counter = 0
@@ -57,7 +59,6 @@ def cuckoo_clock(initial_time: str, n: int) -> str:
 
 
 # CODEWARS TESTS -------------------------------------------------------------------------------------------------------
-import unittest
 
 
 class Test(unittest.TestCase):
@@ -68,7 +69,14 @@ class Test(unittest.TestCase):
         expected_times = ["07:30", "12:45", "01:45", "05:30", "06:00"]
 
         for initial_time, n, expected in zip(initial_times, chimes, expected_times):
-            print("initial time", initial_time, "expected time", expected, "got", cuckoo_clock(initial_time, n))
+            print(
+                "initial time",
+                initial_time,
+                "expected time",
+                expected,
+                "got",
+                cuckoo_clock(initial_time, n),
+            )
             self.assertEqual(cuckoo_clock(initial_time, n), expected)
 
     def test_hour_tests(self):
@@ -78,7 +86,14 @@ class Test(unittest.TestCase):
         expected_times = ["10:00", "10:00", "10:15", "10:45", "11:00"]
 
         for initial_time, n, expected in zip(initial_times, chimes, expected_times):
-            print("initial time", initial_time, "expected time", expected, "got", cuckoo_clock(initial_time, n))
+            print(
+                "initial time",
+                initial_time,
+                "expected time",
+                expected,
+                "got",
+                cuckoo_clock(initial_time, n),
+            )
             self.assertEqual(cuckoo_clock(initial_time, n), expected)
 
     def test_twelve_tests(self):
@@ -88,7 +103,14 @@ class Test(unittest.TestCase):
         expected_times = ["12:30", "12:45", "01:00", "01:15", "02:30"]
 
         for initial_time, n, expected in zip(initial_times, chimes, expected_times):
-            print("initial time", initial_time, "expected time", expected, "got", cuckoo_clock(initial_time, n))
+            print(
+                "initial time",
+                initial_time,
+                "expected time",
+                expected,
+                "got",
+                cuckoo_clock(initial_time, n),
+            )
             self.assertEqual(cuckoo_clock(initial_time, n), expected)
 
     def test_around_tests(self):
@@ -98,7 +120,14 @@ class Test(unittest.TestCase):
         expected_times = ["08:00", "08:15", "08:30", "11:00", "05:45"]
 
         for initial_time, n, expected in zip(initial_times, chimes, expected_times):
-            print("initial time", initial_time, "expected time", expected, "got", cuckoo_clock(initial_time, n))
+            print(
+                "initial time",
+                initial_time,
+                "expected time",
+                expected,
+                "got",
+                cuckoo_clock(initial_time, n),
+            )
             self.assertEqual(cuckoo_clock(initial_time, n), expected)
 
 
