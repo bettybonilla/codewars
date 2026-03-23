@@ -11,4 +11,4 @@ Examples (Input -> Output):
 
 
 def no_space(x: str) -> str:
-    return x.replace(" ","")
+    return x.replace(" ", "")
